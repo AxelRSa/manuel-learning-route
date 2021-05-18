@@ -1,14 +1,12 @@
 doctype html
 html(lang='en')
 	head
-		// Required meta tags
+		//- Required meta tags
 		meta(charset='utf-8')
 		meta(name='viewport' content='width=device-width, initial-scale=1')
-		// Bootstrap CSS
+		//- Bootstrap CSS
 		link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x' crossorigin='anonymous')
-		// Bootstrap ICONS
-		link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css')
-		// Fontawesome
+		//- Fontawesome
 		link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css' integrity='sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==' crossorigin='anonymous' referrerpolicy='no-referrer')
 		title Temario de clases
 		link(rel='stylesheet' href='style.css')
@@ -16,13 +14,13 @@ html(lang='en')
 	body#home(data-bs-spy='scroll' data-bs-target='#navbarSticky' offset='10')
 		.background.container-fluid
 		.container.bg-white.mt-4
-			// title
+			//- title
 			.container
 				.row
 					h1.text-center.pt-2.mb-0
 						| Temario de clases 
-						i.bi.bi-code-square.ps-2
-			// sticky nav
+						i.fas.fa-laptop-code.ps-2
+			//- sticky nav
 			.container.sticky-top.bg-white
 				hr
 				nav#navbarSticky
@@ -30,15 +28,23 @@ html(lang='en')
 						.container-fluid
 							.row
 								li.navitem.col-6.col-md-3
-									a.nav-link.text-center(href='#home') Home
+									a.nav-link.text-center.px-0(href='#home')
+										i.fas.fa-home.me-3
+										|Home
 								li.navitem.col-6.col-md-3
-									a.nav-link.text-center(href='#ruta') Ruta
+									a.nav-link.text-center.px-0(href='#ruta')
+										i.fas.fa-route.me-3
+										|Ruta
 								li.navitem.col-6.col-md-3
-									a.nav-link.text-center(href='#tarea') Tarea
+									a.nav-link.text-center.px-0(href='#tarea')
+										i.fas.fa-laptop-house.me-3
+										|Tarea
 								li.navitem.col-6.col-md-3
-									a.nav-link.text-center(href='#historial') Historial
+									a.nav-link.text-center.px-0(href='#historial')
+										i.far.fa-clipboard.me-3
+										|Historial
 				hr
-			// learning path
+			//- learning path
 			#ruta.container.pt-4
 				h4 Ruta de aprendizaje
 				#accordionExample.accordion
@@ -91,7 +97,7 @@ html(lang='en')
 								code .accordion-body
 								| , though the transition does limit
 								|         overflow.
-			// 17/5/21
+			//- 17/5/21
 			#tarea.container.pt-4
 				h5 17 de mayo del 2021
 				h4 Tarea:
@@ -119,17 +125,17 @@ html(lang='en')
 				ul
 					li Cómo instalar preprocesadores
 				// 17/5/21
-				// footer
-				hr
-				p.fs-4.pb-4
-					| Este temario está en:
-					a.btn.btn-primary.mx-2(href='https://github.com/AxelRSa/manuelTemary' target='_blank')
-						i.bi.bi-github.fs-4
-					|     y está hecho con: 
-					img.mx-2(src="media/images/pug.svg", width=25)
-					i.fab.fa-sass.mx-2
-					i.fab.fa-bootstrap.mx-2
-					i.fab.fa-js.mx-2
-				// footer
+				//- footer
+			hr
+			//- footer
+			p.fs-4.pb-4
+				| Este temario está en:
+				a.btn.btn-primary.mx-2(href='https://github.com/AxelRSa/manuelTemary' target='_blank')
+					i.fab.fa-github.fs-4
+				|     y está hecho con: 
+				img.mx-2(src="media/images/pug.svg", width=25)
+				i.fab.fa-sass.mx-2
+				i.fab.fa-bootstrap.mx-2
+				i.fab.fa-js.mx-2
 				// Option 1: Bootstrap Bundle with Popper
 				script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js' integrity='sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4' crossorigin='anonymous')

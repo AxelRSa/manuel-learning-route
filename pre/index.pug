@@ -13,7 +13,7 @@ html(lang='en')
 		title Temario de clases
 		link(rel='stylesheet' href='style.css')
 		link#pageIcon(rel='shortcut icon' href='media/images/pageIcon.svg')
-	body#home(style='height: 5000px' data-bs-spy='scroll' data-bs-target='#navbarSticky' offset='10')
+	body#home(data-bs-spy='scroll' data-bs-target='#navbarSticky' offset='10')
 		.background.container-fluid
 		.container.bg-white.mt-4
 			// title
@@ -29,13 +29,13 @@ html(lang='en')
 					ul.nav.nav-pills.justify-content-center
 						.container-fluid
 							.row
-								li.navitem.col-md-3
+								li.navitem.col-6.col-md-3
 									a.nav-link.text-center(href='#home') Home
-								li.navitem.col-md-3
+								li.navitem.col-6.col-md-3
 									a.nav-link.text-center(href='#ruta') Ruta
-								li.navitem.col-md-3
+								li.navitem.col-6.col-md-3
 									a.nav-link.text-center(href='#tarea') Tarea
-								li.navitem.col-md-3
+								li.navitem.col-6.col-md-3
 									a.nav-link.text-center(href='#historial') Historial
 				hr
 			// learning path

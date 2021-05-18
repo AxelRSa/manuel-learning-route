@@ -24,7 +24,8 @@
 		</div>
 		<div class="container py-4">
 			<!-- 17/5/21 -->
-			<h4 class="cl-danger">Tarea:</h4>
+			<h5>17 de mayo del 2021</h5>
+			<h4>Tarea:</h4>
 			<ul>
 				<li><span class="fw-bold">Terminar: </span><a href="http://www.flexboxdefense.com/"> Flex Defense</a></li>
 				<li><span class="fw-bold">Estudiar: </span>
@@ -42,7 +43,7 @@
 					</ul>
 				</li>
 			</ul>
-			<h4 class="cl-danger">Pendientes:</h4>
+			<h4>Pendientes:</h4>
 			<ul>
 				<li>Cómo instalar preprocesadores</li>
 			</ul>

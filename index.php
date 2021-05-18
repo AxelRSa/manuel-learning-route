@@ -15,10 +15,10 @@
 
 <body>
 	<div class="background container-fluid"></div>
-	<div class="container bg-white">
+	<div class="container bg-white mt-4">
 		<div class="container">
 			<div class="row">
-				<h1 class="text-center">Temario de clases <i class="bi bi-code-square"></i></h1>
+				<h1 class="text-center py-2 ">Temario de clases <i class="bi bi-code-square ps-2"></i></h1>
 				<hr>
 			</div>
 		</div>

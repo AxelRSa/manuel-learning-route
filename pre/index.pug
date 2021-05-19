@@ -11,9 +11,11 @@ html(lang='en')
 		title Temario de clases
 		link(rel='stylesheet' href='style.css')
 		link#pageIcon(rel='shortcut icon' href='media/images/pageIcon.svg')
-	body#home(data-bs-spy='scroll' data-bs-target='#navbarSticky' offset='10')
+	body#home(data-bs-spy='scroll' data-bs-target='#navbarSticky')
+		//-background
 		.background.container-fluid
-		.container.bg-white.mt-4
+		//-principal container
+		.container.bg-white.mt-5
 			//- title
 			.container
 				.row
@@ -21,26 +23,26 @@ html(lang='en')
 						| Temario de clases 
 						i.fas.fa-laptop-code.ps-2
 			//- sticky nav
-			.container.sticky-top.bg-white
+			#navbar.container.sticky-top.bg-white
 				hr
 				nav#navbarSticky
 					ul.nav.nav-pills.justify-content-center
 						.container-fluid
 							.row
 								li.navitem.col-6.col-md-3
-									a.nav-link.text-center.px-0(href='#home')
+									a.navbarSticky__a.nav-link.text-center.px-0(href="#home")
 										i.fas.fa-home.me-3
 										|Home
 								li.navitem.col-6.col-md-3
-									a.nav-link.text-center.px-0(href='#ruta')
+									a.navbarSticky__a.nav-link.text-center.px-0(href="#ruta")
 										i.fas.fa-route.me-3
 										|Ruta
 								li.navitem.col-6.col-md-3
-									a.nav-link.text-center.px-0(href='#tarea')
+									a.navbarSticky__a.nav-link.text-center.px-0(href="#tarea")
 										i.fas.fa-laptop-house.me-3
 										|Tarea
 								li.navitem.col-6.col-md-3
-									a.nav-link.text-center.px-0(href='#historial')
+									a.navbarSticky__a.nav-link.text-center.px-0(href="#historial")
 										i.far.fa-clipboard.me-3
 										|Historial
 				hr
@@ -97,8 +99,43 @@ html(lang='en')
 								code .accordion-body
 								| , though the transition does limit
 								|         overflow.
-			//- 17/5/21
+					.accordion-item
+						h2#headingThree.accordion-header
+							button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree')
+								| SCSS
+						#collapseThree.accordion-collapse.collapse(aria-labelledby='headingThree' data-bs-parent='#accordionExample')
+							.accordion-body
+								strong This is the third item's accordion body.
+								|  It is hidden
+								|         by default, until the collapse plugin adds the appropriate classes that
+								|         we use to style each element. These classes control the overall
+								|         appearance, as well as the showing and hiding via CSS transitions. You
+								|         can modify any of this with custom CSS or overriding our default
+								|         variables. It's also worth noting that just about any HTML can go within
+								|         the 
+								code .accordion-body
+								| , though the transition does limit
+								|         overflow.
+					.accordion-item
+						h2#headingThree.accordion-header
+							button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree')
+								| PUG
+						#collapseThree.accordion-collapse.collapse(aria-labelledby='headingThree' data-bs-parent='#accordionExample')
+							.accordion-body
+								strong This is the third item's accordion body.
+								|  It is hidden
+								|         by default, until the collapse plugin adds the appropriate classes that
+								|         we use to style each element. These classes control the overall
+								|         appearance, as well as the showing and hiding via CSS transitions. You
+								|         can modify any of this with custom CSS or overriding our default
+								|         variables. It's also worth noting that just about any HTML can go within
+								|         the 
+								code .accordion-body
+								| , though the transition does limit
+								|         overflow.
+			//- work
 			#tarea.container.pt-4
+				h4 Tarea
 				h5 17 de mayo del 2021
 				h4 Tarea:
 				ul
@@ -127,6 +164,9 @@ html(lang='en')
 				// 17/5/21
 				//- footer
 			hr
+			//- work history
+			#historial
+				h4 Historial
 			//- footer
 			p.fs-4.pb-4
 				| Este temario está en:
@@ -137,5 +177,6 @@ html(lang='en')
 				i.fab.fa-sass.mx-2
 				i.fab.fa-bootstrap.mx-2
 				i.fab.fa-js.mx-2
-				// Option 1: Bootstrap Bundle with Popper
-				script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js' integrity='sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4' crossorigin='anonymous')
+		script(src="script.js") 
+		//- Option 1: Bootstrap Bundle with Popper
+		script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js' integrity='sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4' crossorigin='anonymous')

@@ -12,6 +12,8 @@ html(lang='en')
 		link(rel='stylesheet' href='style.css')
 		link#pageIcon(rel='shortcut icon' href='media/images/pageIcon.svg')
 	body#home(data-bs-spy='scroll' data-bs-target='#navbarSticky')
+		//-includes
+		include pug/_learningPath
 		//-background
 		.background.container-fluid
 		//-principal container
@@ -48,99 +50,50 @@ html(lang='en')
 				hr
 			//- learning path
 			#ruta.container.pt-4
-				h4 Ruta de aprendizaje
+				hr
+				h4.h2.text-center Ruta de aprendizaje
 				#accordionExample.accordion
-					.accordion-item
-						h2#headingOne.accordion-header
-							button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapseOne' aria-expanded='false' aria-controls='collapseOne')
-								| HTML
-						#collapseOne.accordion-collapse.collapse(aria-labelledby='headingOne' data-bs-parent='#accordionExample')
-							.accordion-body
-								ul
-									li: strong Formularios 
-									li Videos 
-									li Tables 
-									li: strong Divs 
-									li Audios
-					.accordion-item
-						h2#headingTwo.accordion-header
-							button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
-								| CSS
-						#collapseTwo.accordion-collapse.collapse(aria-labelledby='headingTwo' data-bs-parent='#accordionExample')
-							.accordion-body
-								ul 
-									li Unidades 
-									li Fuentes externas 
-									li Z-index 
-									li Overflow
-									li: strong Position 
-									li: strong Pseudo elementos
-									li Colores
-									li: strong Display
-									li Float
-									li: strong Flexbox
-									li: strong Grid
-									li Animation
-									li Transition
-									li Background
-									li Filtros
-									li Outline
-					.accordion-item
-						h2#headingThree.accordion-header
-							button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree')
-								| JS
-						#collapseThree.accordion-collapse.collapse(aria-labelledby='headingThree' data-bs-parent='#accordionExample')
-							.accordion-body
-								//- Contenido
-					.accordion-item
-						h2#headingFour.accordion-header
-							button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapseFour' aria-expanded='false' aria-controls='collapseFour')
-								| SCSS
-						#collapseFour.accordion-collapse.collapse(aria-labelledby='headingFour' data-bs-parent='#accordionExample')
-							.accordion-body
-								//- Contenido
-					.accordion-item
-						h2#headingFive.accordion-header
-							button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapseFive' aria-expanded='false' aria-controls='collapseFive')
-								| PUG
-						#collapseFive.accordion-collapse.collapse(aria-labelledby='headingFive' data-bs-parent='#accordionExample')
-							.accordion-body
-								//- Contenido
+					+learningPath("headerid1","bodyid1","HTML")
+						p hola
+					+learningPath("headerid2","bodyid2","CSS")
+						p hola
+					+learningPath("headerid3","bodyid3","JS")
+						p hola
+					+learningPath("headerid4","bodyid4","PUG")
+						p hola
+					+learningPath("headerid5","bodyid5","SASS")
+						p hola
+					+learningPath("headerid6","bodyid6","GIT")
+						p hola
 			//- work
 			#tarea.container.pt-4
-				h4 Tarea
-				h5 17 de mayo del 2021
+				hr
+				h4.h2.text-center Tarea
+				h5 15 de mayo del 2021
 				h4 Tarea:
-				ul
-					li
-						span.fw-bold Terminar: 
-						a(href='http://www.flexboxdefense.com/' target='_blank')
-							| Flex Defense
-					li
-						span.fw-bold Estudiar: 
+				ul 
+					li 25 horas en la semana
+					li Terminar de ver el curso de Javascript
+					li Ver el curso de Git
 						ul
-							li
-								span.fw-bold HTML :
-								ul
-									li Etiqueta form
-									li Etiqueta table
-									li Etiqueta video
-									li Etiqueta audio
-									li Etiqueta div
-							li
-								span.fw-bold Rutas relativas
-					li
-						span.fw-bold Crear cuenta de Github
-				h4 Pendientes:
-				ul
-					li Cómo instalar preprocesadores
-				// 17/5/21
-				//- footer
-			hr
+							li: strong Página tiki 
+							ul
+								li Flecha que desaparece cuando estás arriba 
+								li Hacer responsive
 			//- work history
-			#historial
-				h4 Historial
+			#historial.container.pt-4
+				hr
+				h4.h2.text-center.gray Historial
+					h5 8 de mayo del 2021
+					h4 Tarea:
+					ul 
+						li 5 horas de programación L-V 
+						li Diseño de la página de bolsas 
+						li Nuevas fotos añadirlas 
+						li Modificar la información 
+						li Modificar el contacto
 			//- footer
+			hr
 			p.fs-4.pb-4
 				| Este temario está en:
 				a.btn.btn-primary.mx-2(href='https://github.com/AxelRSa/manuelTemary' target='_blank')

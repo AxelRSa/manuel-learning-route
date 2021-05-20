@@ -2,7 +2,6 @@
 navbarHeight = navbar.offsetHeight;
 home.setAttribute("data-bs-offset", navbarHeight);
 sections = [home, ruta, tarea, historial];
-//  offsetTop
 buttons = document.querySelectorAll(".navbarSticky__a");
 i = 0;
 buttons.forEach((ele) => {

@@ -17,5 +17,33 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: #ffb4bf;
+  opacity: 0.3;
+}
+
+.navbarSticky__a {
+  color: #ff8193;
+}
+
+.navbarSticky__a:hover {
+  color: #ff1b3c;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #ff8193;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #ff8193;
+  background-color: #ffe7eb;
+}
+
+.btn-primary {
+  background-color: #ff8193;
+  border-color: #ff4e68;
+}
+
+.btn-primary:hover {
+  background-color: #ff687e;
+  border-color: #ff3552;
 }

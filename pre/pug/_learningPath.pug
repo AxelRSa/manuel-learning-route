@@ -1,0 +1,7 @@
+mixin learningPath(headingId,bodyId,name)
+	.accordion-item
+		h2.accordion-header(id=headingId)
+			button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target=("#" + bodyId) aria-expanded='false' aria-controls=bodyId)=name
+		.accordion-collapse.collapse(aria-labelledby=headingId data-bs-parent='#accordionExample' id=bodyId)
+			.accordion-body
+				block
